@@ -21,4 +21,11 @@ public class DemoApplication {
 
 	}
 
+	@GetMapping("/salve")
+	public String salve(@RequestParam(value="Galera", defaultValue = "Galera") String name){
+
+		return String.format("Hello %s", name);
+
+	}
+
 }
